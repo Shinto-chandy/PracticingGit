@@ -134,3 +134,32 @@ Getting Started :
 				=> `git add <filename>` 	// added this changed file to staging and after that we will commit the file.
 				=> `git restore --staged <filename>`	// RESTORE the already staged file back to local bcz we are currently working on it. (Error showing use : `git init`)
 				=> `git commit -a -m "Updated Text in the file"`		// will DIRECTLY PASS through Staging and Commit the File. 
+		
+		# DELETING/ removing Files | RESTORING it back :
+				=> `git rm "<filename>"` 						// remove the file from dir
+				=> `git status`										// will show that we deleted one file int it 
+				=> `git restore --staged "<filename>"`	// will restore the deleted file from stagging envo
+				=> `git restore <filename>`					// restoring back to repo
+				
+		# RENAMING Files : 
+				=> `git mv "<oldfilename>" "<newFileName>"` 			// rename the old name to new name.
+				=> `git status`		// will show the renamed file in staged envo, so commit it back
+				=> `git commit -m "Image name remaned"`
+		
+		# Viewing Commit HISTORY with git LOG :
+				=> `git log`		// view the commited log history. 
+				=> `git log --oneline`		// show the commits in one line.
+				=> `git log -p` 				// for viweing the commits by pressing the down arrow - Press 'Q' exit/Quit from that view. 
+		
+		# AMEND the Commited Text : 
+				=> git commit -m "The Image name renamed to new Name" --amend		// will change the alredy commited wrng txt to new one. 
+				=> `git log -p`	// view the commited changes. 
+		
+		# RESET to Previous commit : 
+				=> `git reset <commit Value>`				// jumb back to previous commit .
+		
+		# REBASE the git Repo :
+				=> `git rebase -i  --root` 			// will open an editor where we can edit the view commits, order, merge the commits ...etc.
+				
+		# BRANCHING : 
+				=> 
