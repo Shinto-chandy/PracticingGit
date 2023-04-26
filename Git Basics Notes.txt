@@ -1,0 +1,136 @@
+
+What is GIT 
+=========
+# Free and open source distributed Version Control System (VCS)
+	=> Free - anyone can download, use, modify, and distribute Git without having to pay any fees
+	=> Open Source - source code is freely available for anyone to view, use, modify, and distribute
+	=> Distributed VCS - 
+		> allows multiple users to work on the same codebase simultaneously and independently.
+		> every developer has a complete copy of the codebase and its history on their local machine.
+
+# Developed by - Linus Torvalds (creator of linux OS)
+# One of the biggest advantages - its branching capabilities
+# Git help you to do the version control by its own but we need to mention what we are doing by commands. 
+# Trunk Based Development - A term used in development 
+# we can revert back to previous version. 
+
+Why Git  : 
+	=> Free => Open Source => Super Fast => Scalable	=> Branching and merging.
+
+Centralized | Decentralized  | Distributed (Systems)
+-----------------------------------------------------------------
+	1. Centralized - All resources and data are managed and controlled by a central authority, typically a server or mainframe. 
+							Eg : Online social applications like FB, Twitter, Quora
+	2. Decentralized - Resources and data are distributed across multiple nodes or servers, and there is no central authority or server controlling everything	(P2P  - Peer to Peer)
+								Eg: A hotel decide to open in new state : new location freedom to operate independently
+	3. Distributed - Similar to a decentralized system
+						 - Resources and data are distributed across multiple nodes or servers but here node or server are not working together rather wrking individually
+							Eg: Telephone , Internet, Git
+	# Early we are using Centralized VCS and now we are usinf Distributed VCS. 
+
+
+Git branching and Merging
+---------------------------------
+It allow you to create separate lines of development within a single repository, and then merge those lines of development back together. 
+	# Create a new branch - `git branch <branch-name>`
+	# Switch to a different branch - `git checkout <branch-name>`
+	# Make changes and commit - `git commit`
+	# Merge branches - `git merge <branch-name>`
+	# Delete a branch - `git branch -d <branch-name>`
+
+Git Workflows
+---------------------
+	# Gitflow workflow - Its a branching model [here we have a development branch, a release branch, and a master branch]
+									> Developers work on feature branches that are merged into the development branch
+									>  Then merged into the release branch for testing and bug fixes
+									> Once the release branch is stable, it is merged into the master branch for deployment
+									
+	# GitHub flow - Its is a lightweight workflow [here we have a Single/Master branch - after the devs create featur branch and merge it when they finish]
+	# GitLab flow - similar to the GitHub flow, Here After the development they test and review the code then only it Merge to the Master Branch for Deployment. 
+
+Git hosting platforms :
+	1. GitHub - Build for Developers. 
+	2. GitLab - Maily for Modern Developers. 
+	3. Bitbucket - Built for Professional Teams
+
+Where all we can use : 
+	1. CMD (command line)
+	2. code editors & IDEs (vs code)
+	3. GUI (Linux, windows, MAC ..etc)
+	
+Note : Everyone usind command line bcz GUI tool have limitation, not always available but we can use. 
+		=> Always use right tool for your work/ job.
+
+==========================================================================
+
+Getting Started : 
+	1. Install Git in your machine
+	2. We can work with GitHub | GitLab 
+	=> GitHub 
+		1. SignIn or SignUp
+		2. Create a Repository(a place wher u can put ur prjt)
+			=> Give a name for repository
+			=> make public or private with a README file. 
+			=> Create Repo.
+		3. After created Repo, we can create a new file and commit it to the Repo. 
+			=> Everytime we create a new file or adding new changes give a good messge 
+		
+	=> Using GIT BASH Terminal : (Commands and Working)
+		 ===================
+		# We can use any terminal like CMD, Powershell ...etc
+		# First we need to configure few things - username, email and password. 
+		
+				=> `git config --global user.name "Shinto Chandy"`			// uname
+				=> `git config --global user.email shintochandy642@gmail.com`		// email
+				=> `git config --global init.defaultBranch main`			// setting default branch
+				=> `git config --list`			// list all the configured details.
+
+		# if U want to know more about "git config" use 
+				
+				=> `git <command> -h` 	// will list the ways we can configure things
+				=> `git help <command>`	// git help config - will open more details in browser. 
+				
+		# To clear the terminal - need a fresh look
+		
+				=> clear 	// use this command.
+				
+		# Create Initial Repository : 
+				=> First go to the current directory where ur files are by :
+				
+					- `cd D:\Backup_Schandy\MyNotes\Git\<files>` 		// upto that folder where ur files available. 
+					
+				=> `git init` 	// initialize that folder and files to git repository and now we are in (main) branch. 
+						Explantion - 1st step in setting up a new Git repository on your local machine. 
+										- Git creates a new .git directory in the root of your project folder. This directory contains all the necessary Git metadata and configuration files that Git uses to track changes to your project files and manage version control. Actually this .get folder is hidden in your explorer.
+										
+		# Know the current STATUS of that folder :
+				=> `git status` 		// will get the status of our repository - will show the added and non-added files to the repository by green and red color.	(Red - Git can't track the changes | Green - Can Track all the changes that we made)
+		
+		# We can ADD file to the repository :
+				=> `git add <filename>`		//  this will add file which can track by git. (show in Green color.)
+				=> `git status` // will give you the current status of that file
+				=> `git rm --cached <file>` 	// this cmd will help to untrack or remove that file form git.
+		
+		# How to Completely IGNORE a file from Tracking :
+				=> create a .gitignore in your repository in local.
+				=> Inside this file we can define what all files that we need to ignore with the help of .extenction //reffer the file created in local machine. (if you want to ignore all .txt file use a * symboll infront of extenction)
+				=> `git status` //now git will ingnore and will not show that file.
+	
+		# ADD entire files or folder trackable / add to staging environment : (Staging - holding place before commiting)
+				=> `git add --all` | `git add -A` | `git add .`	// . for entire directory
+				=> `git status` 		// will show all files that git can track in green clr.
+		
+		NOTE : we have 3 stages - (1). Working Files in Local  (2). Stagging	(3). Committing
+		
+		# COMMITTING Files : 
+				=> Means writting an entry into the history book, likwise we can track all the changes. 
+				=> `git commit -m "first commit - comitting all file to repository"`		// commiting all file (-m specify the commit msg)
+				=> `git commit <filename> -m "first commit - comitting all file to repository"	 // to commit specifc file
+				=> `git status`
+				
+		# Make CHANGES in file and Viewing DIFFERENCE'S :
+				=> `git staus` 	// will show we modifued the file in red color
+				=> `git diff`		// will show what changes you made in that file ( will display old one in red and new in green clr)
+				=> `git add <filename>` 	// added this changed file to staging and after that we will commit the file.
+				=> `git restore --staged <filename>`	// RESTORE the already staged file back to local bcz we are currently working on it. (Error showing use : `git init`)
+				=> `git commit -a -m "Updated Text in the file"`		// will directly pass through Staging and Commit the File. 
