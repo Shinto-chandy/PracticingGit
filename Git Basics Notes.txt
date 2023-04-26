@@ -133,4 +133,4 @@ Getting Started :
 				=> `git diff`		// will show what changes you made in that file ( will display old one in red and new in green clr)
 				=> `git add <filename>` 	// added this changed file to staging and after that we will commit the file.
 				=> `git restore --staged <filename>`	// RESTORE the already staged file back to local bcz we are currently working on it. (Error showing use : `git init`)
-				=> `git commit -a -m "Updated Text in the file"`		// will directly pass through Staging and Commit the File. 
+				=> `git commit -a -m "Updated Text in the file"`		// will DIRECTLY PASS through Staging and Commit the File. 
