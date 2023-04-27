@@ -169,3 +169,8 @@ Getting Started :
 			
 		# MERGE Branches :
 				=> git merge -m "<Any Contents that you want to give.>" <MergingBranchName>			// Merge the changes in the created branch with Main branch 
+				=>  `git branch <BranchName>`		// for creating new branch for making any changes or fixing bugs.
+				=> `git branch`									// to view all branches. (also we can view the active current branch in green clr with * symbol )
+				=> git switch <BranchName>			// will swith you to another branch from current branch. Check which brand is active.
+				=> 
+
