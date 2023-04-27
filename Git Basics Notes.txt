@@ -162,4 +162,10 @@ Getting Started :
 				=> `git rebase -i  --root` 			// will open an editor where we can edit the view commits, order, merge the commits ...etc.
 				
 		# BRANCHING : 
-				=> 
+				=> `git branch <BranchName>`		// for creating new branch for making any changes or fixing bugs.
+				=> `git branch`									// to view all branches. (also we can view the active current branch in green clr with * symbol )
+				=> `git switch <BranchName>`			// will swith you to another branch from current branch. Check which brand is active.
+				=> Make the necessary changes in any of the file and COMMIT it to the New Branch. (Note : If you make changes in 1 branch then it only reflect in that branch only untill to merge it to main branch.)
+			
+		# MERGE Branches :
+				=> git merge -m "<Any Contents that you want to give.>" <MergingBranchName>			// Merge the changes in the created branch with Main branch 
