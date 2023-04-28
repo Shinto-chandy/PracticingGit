@@ -157,6 +157,7 @@ Getting Started :
 		
 		# RESET to Previous commit : 
 				=> `git reset <commit Value>`				// jumb back to previous commit .
+				=> `git restore <file>` 							// discard changes in current wrking directory
 		
 		# REBASE the git Repo :
 				=> `git rebase -i  --root` 			// will open an editor where we can edit the view commits, order, merge the commits ...etc.
@@ -172,5 +173,15 @@ Getting Started :
 				=>  `git branch <BranchName>`		// for creating new branch for making any changes or fixing bugs.
 				=> `git branch`									// to view all branches. (also we can view the active current branch in green clr with * symbol )
 				=> git switch <BranchName>			// will swith you to another branch from current branch. Check which brand is active.
+				=> Now we can see the file which edited in older branch merged with main branch.
+		
+		# DELETE Branches :
+				=> `git branch -d <BranchName>`		// will delete the selected branch. 
+				=> `git branch`									// view branches
+		
+		# MERGE CONFLITS :
+				=> `git switch -c <BranchName>`		// will create(-c) a new branch and switch to the created branch.
+				=> `git branch`	
+				=> `git commit -a -m "Message"`		// First edit a file and then commit again those to the new branch after that only we Merge it to "main branch"
 				=> 
 
