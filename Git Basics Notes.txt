@@ -201,7 +201,53 @@ Getting Started :
 					1. create a new repository on the command line
 					2. push an existing repository from the command line
 					3. import code from another repository
-			* we are going with 2nd coz we already have one. So copyt the URL and run it in GIT BASH.		// will establish a remote connection with GitHub. (git remote add origin https://github.com/Shinto-chandy/PracticingGit.git)
-			* run the 2nd cmd - (git branch -M main) 		// make the target branch as main
-			* Push the entire local repo code to github (git push -u origin main)			// push local repo to cloud.
-			* since we have synced everything with GitHub.
+				* we are going with 2nd coz we already have one. So copyt the URL and run it in GIT BASH.		// will establish a remote connection with GitHub. (`git remote add origin https://github.com/Shinto-chandy/PracticingGit.git`)
+				* run the 2nd cmd - (`git branch -M main`) 		// make the target branch as main
+				* Push the entire local repo code to github (`git push -u origin main`)			// push local repo to cloud.
+				* since we have synced everything with GitHub.			// go to github and see those file with only 1 branch `main`
+				* `git push --all`					// PUSH all your branches to GitHub - now we  got all out branched in github
+		
+		# Working with FILES : 
+				=> Here we can view, edit and do all the changes that we done in Local.
+				=> Add new files / edit / add new commits direclty from their / edit projt details ...etc 
+				
+		
+		# ISSUES :
+				=> On Github repo next to  <> code ISSUE option was their - her we can Raise an issue By Clicking "NEW ISSUE"
+				=> Give a Title, descriptions, ASSIGN that issue to someone in ur team or to yourself , give a LABEL , 
+				=> Submit new issue 				// Github is a publc platform where others  can discuss and comment on your raised ISSUE. 
+			
+		# PULL Request :
+				=> After that u can go to ur file and click edit icon and make necessary changes to File. 
+				=> Give necessary commit message and you can do 2 things
+						1. Direcly COMMIT to main branch
+						2. Create a new Branch for this Commit msg and Start a PULL Request. 			// PULL REQUEST - Means that our changes has to been approved or reviewd by someone before u PUSH it to MAIN Branch. 
+							* After entering the above details do - PROPOSE CHANGES. 					// will create a new branch for this PULL request. 
+							* Create a PULL Request. (Give a Msg and description) 
+							* After successfull completion of PULL Request , if everything looks good then we can "MERGE PULL REQUEST"		// NB : 
+								NOTE : If u want to resolve an ISSUE with this PULL and MERGE request > Right side/ Development/ Her U can choose the ISSUE and resolve it (Basically tie back to this issue on this PULL & MERGE request)
+							* Merge and Confirm the MSG. 					// check the ISSUE section the Issue will now RESOLVED. 
+				=> Thats it
+				
+		# OTHER TABS : 
+				=> Actions - we can run different TESTS, write prgms to manage repo
+				=> Projects - Prjt mgmnt view, View all ISSUES, View all PULL requests, FILTER differnt Views
+				=> Wiki - We can Document out Code here
+				=> Security - manage all the policies,  
+				=> Insights - Who all are contributing to Prjt ,Traffic in prjt, How many issues closed, how many commits, ..etc
+				=> Settings - Settings related to ur prjt, Add additional people wrk with ur prjt, 
+		
+		# RELEASES :
+				=> From main page we can create RELEASE version of our doc or prjt (right side - Releases.)
+				=> Create a new Release 
+				=> Create a tag called Release and create  a release title (V1.0.0)			// see the suggestions to create the releases..
+				=> This will Generate 2 .zip files that anyone can come and download the prjt data on that release. 
+				
+		# FETCH & PULL : 
+				=> Get the changes back to Local from the cloud.
+				=> `git fetch`			// will download all the history from the remote tracking branches
+				=> `git merge`			// will merge it with the files in Local Machine
+				=> `git pull` 				// Combination of both FETCH and MERGE cmds. i.e it combines both their duties at a time. 
+				Note : This will change all the things in Local that you made changes on CLoud. 
+			
+ HOORAY, ALL DONE !
