@@ -183,5 +183,9 @@ Getting Started :
 				=> `git switch -c <BranchName>`		// will create(-c) a new branch and switch to the created branch.
 				=> `git branch`	
 				=> `git commit -a -m "Message"`		// First edit a file and then commit again those to the new branch after that only we Merge it to "main branch"
-				=> 
+				=> The Merge conflict will look like :
+						<<<<<<<< Head		- Represent the Main branch with ====== arrow
+						>>>>>>>> BranchName - Represent the data from New Branch  			// this issue happen when u try to update the file from both branches and trying to merge.
+				=> So in this case, remove the Text that you don't want and keep the text that u need to merge from the .txt file.
+				
 
