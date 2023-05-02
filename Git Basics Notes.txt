@@ -77,7 +77,7 @@ Getting Started :
 		
 	=> Using GIT BASH Terminal : (Commands and Working)
 		 ===================
-		# We can use any terminal like CMD, Powershell ...etc
+		# We can use any terminal like GitBash, CMD, Powershell ...etc
 		# First we need to configure few things - username, email and password. 
 		
 				=> `git config --global user.name "Shinto Chandy"`			// uname
@@ -120,7 +120,7 @@ Getting Started :
 				=> `git add --all` | `git add -A` | `git add .`	// . for entire directory
 				=> `git status` 		// will show all files that git can track in green clr.
 		
-		NOTE : we have 3 stages - (1). Working Files in Local  (2). Stagging	(3). Committing
+		NOTE : we have 3 stages - (1). Working Files in Local  (2). Stagging	(3). Committing	=> After we do (4). PUSH to Cloud
 		
 		# COMMITTING Files : 
 				=> Means writting an entry into the history book, likwise we can track all the changes. 
