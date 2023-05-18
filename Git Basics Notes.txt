@@ -128,6 +128,9 @@ Getting Started :
 				=> `git commit <filename> -m "first commit - comitting all file to repository"	 // to commit specifc file
 				=> `git status`
 				
+		# Git Commiting the Specific files form Staging:
+				=> `git commit --interactive`		// will give an option to "pick" or "drop" particular files before committing.
+				
 		# Make CHANGES in file and Viewing DIFFERENCE'S :
 				=> `git staus` 	// will show we modifued the file in red color
 				=> `git diff`		// will show what changes you made in that file ( will display old one in red and new in green clr)
