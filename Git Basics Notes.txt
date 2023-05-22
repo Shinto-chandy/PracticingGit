@@ -14,6 +14,13 @@ What is GIT
 # Trunk Based Development - A term used in development 
 # we can revert back to previous version. 
 
+CI CD pipeline?
+--------------------
+	# A continuous integration and continuous deployment (CI/CD) pipeline.
+	# Is a series of steps that must be performed in order to deliver a new version of software.
+	# It is a set of practices that automates the software development process. CI/CD pipelines automate the steps involved in building, testing, and deploying software. This can help to improve the quality of software and reduce the time it takes to get software to market.
+	# Both GitHub Actions and GitLab Pipelines are powerful CI/CD platforms that can help you to improve the quality of your software and reduce the time it takes to get software to market.
+	
 Why Git  : 
 	=> Free => Open Source => Super Fast => Scalable	=> Branching and merging.
 
