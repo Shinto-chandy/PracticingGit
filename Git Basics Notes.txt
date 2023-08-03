@@ -160,6 +160,10 @@ Getting Started :
 				=> `git log`		// view the commited log history. 
 				=> `git log --oneline`		// show the commits in one line.
 				=> `git log -p` 				// for viweing the commits by pressing the down arrow - Press 'Q' exit/Quit from that view. 
+				
+		# Git Stash : Git stash is a feature of Git that allows you to temporarily store your changes so that you can work on something else without losing your changes. 
+				=> `git stash`	//stash your changes and create a stash entry
+				=> `git stash pop`	//come back to the stashed changes 
 		
 		# AMEND the Commited Text : 
 				=> git commit -m "The Image name renamed to new Name" --amend		// will change the alredy commited wrng txt to new one. 
