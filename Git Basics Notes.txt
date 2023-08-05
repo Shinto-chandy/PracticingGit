@@ -158,10 +158,12 @@ Getting Started :
 		
 		# Viewing Commit HISTORY with git LOG :
 				=> `git log`		// view the commited log history. 
+				=> `git log --al`	// get all the history
 				=> `git log --oneline`		// show the commits in one line.
 				=> `git log -p` 				// for viweing the commits by pressing the down arrow - Press 'Q' exit/Quit from that view. 
+				=> `git log --all --decorate --graph`	// get a clear idea of how we are switching from one area to another.
 				
-		# Git Stash : Git stash is a feature of Git that allows you to temporarily store your changes so that you can work on something else without losing your changes. 
+		# Git Stash : Git stash is a feature of Git that allows you to temporarily store your changes so that you can work on something else without losing your changes | we can say it will remove the unwanted contents.
 				=> `git stash`	//stash your changes and create a stash entry
 				=> `git stash pop`	//come back to the stashed changes 
 		
@@ -179,15 +181,19 @@ Getting Started :
 		# BRANCHING : 
 				=> `git branch <BranchName>`		// for creating new branch for making any changes or fixing bugs.
 				=> `git branch`									// to view all branches. (also we can view the active current branch in green clr with * symbol )
-				=> `git switch <BranchName>`			// will swith you to another branch from current branch. Check which brand is active.
+				=> `git switch <BranchName>`			// will swith you to another branch from current branch. Check which brand is active. 
+				=> ``git checkout <BranchName>		// we are user this command also for switching branch.
 				=> Make the necessary changes in any of the file and COMMIT it to the New Branch. (Note : If you make changes in 1 branch then it only reflect in that branch only untill to merge it to main branch.)
 			
-		# MERGE Branches :
-				=> git merge -m "<Any Contents that you want to give.>" <MergingBranchName>			// Merge the changes in the created branch with Main branch 
+		# MERGE Branches :	(Note : if i want to merge 'A' with main branch, first be in main branch then only merge 'A')
+				=> git merge -m "<Any Contents that you want to give.>" <MergingBranchName>			// Merge the changes in the created branch with Main branch  - it is called "Fast Forward Merge"
 				=>  `git branch <BranchName>`		// for creating new branch for making any changes or fixing bugs.
 				=> `git branch`									// to view all branches. (also we can view the active current branch in green clr with * symbol )
 				=> git switch <BranchName>			// will swith you to another branch from current branch. Check which brand is active.
 				=> Now we can see the file which edited in older branch merged with main branch.
+				
+				=> "Recursive Merge" : Merging used to combine changes from different branches or commits.
+				=> In this type of merge we need to give a particular commit message inorder to commit 2 differnt commited branches.
 		
 		# DELETE Branches :
 				=> `git branch -d <BranchName>`		// will delete the selected branch. 
@@ -216,6 +222,9 @@ Getting Started :
 					2. push an existing repository from the command line
 					3. import code from another repository
 				* we are going with 2nd coz we already have one. So copyt the URL and run it in GIT BASH.		// will establish a remote connection with GitHub. (`git remote add origin https://github.com/Shinto-chandy/PracticingGit.git`)
+					- here we given as "origin" we are give any names as our wish. We can give any names as our wish. 		
+					- `git remote`	// view the available remotes
+					- `git remote -v`	// view to which link we are going to push our code in that remote.		(Note : we can add/create differnt or multiple remotes and push our same codes)
 				* run the 2nd cmd - (`git branch -M main`) 		// make the target branch as main
 				* Push the entire local repo code to github (`git push -u origin main`)			// push local repo to cloud.
 				* since we have synced everything with GitHub.			// go to github and see those file with only 1 branch `main`
@@ -263,5 +272,25 @@ Getting Started :
 				=> `git merge`			// will merge it with the files in Local Machine
 				=> `git pull` 				// Combination of both FETCH and MERGE cmds. i.e it combines both their duties at a time. 
 				Note : This will change all the things in Local that you made changes on CLoud. 
+		
+		# Git Clone : 
+				=> `git clone <repo link>` 		// we can directly clone the remote repository to out local. (Note : when i clone someones prjt then the remote name shoulf be "ORIGIN" only)
+		
+		Open Source Projects
+		===============
+		# We can contribute to some OpenSource Projets or to some NGO projects. 
+		# How ? FInd out the open source project in github here can can directly clone their project to out local. But the issue is we cant push our code to their branch. 
+		# Why ? because we dont have the permission directly, 
+		# Solution ? 
+			=> First we need to open their code in github, Her we cant see the "Settings" option in the page. Because it their code. 
+			=> What we need to do is, "FORK" we can fork the project to our page. (Her we will get the Settings and other pushing crediantials, bcz this is our page)
+			=> Next CLONE the prjt and create branches or make changes in your local and then push that changes to your code under your github. 
+			=> Now we can able to push the code but this one is only in new branch, we need to mearge our changes with main branch - for that we need to create a pull request.
+			=> here the request is going to the ORIGINAL owner of the open source site, They review your code and then Merge our Code with them,
+		# Like this we can contribute on Live or OpenSoruce prjts.
+		
+		$ Sponsorship - we can create sponsorship button in github and can add the payment links also.
+		$ Gist - If we want to give visibility of our particular code to public, or if you want to access that particular code at any time we can put it in 'GIST'. (github profile/ dropdown/ new gist)
+				  - we can also see others public gist. We can also contribute a particular code in gist.
 			
  HOORAY, ALL DONE !
